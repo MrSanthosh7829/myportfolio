@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saurav | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {margin:0; padding:0; box-sizing: border-box;}
+    body {font-family: 'Segoe UI', sans-serif; background:#0f172a; color:white; line-height:1.6; overflow-x:hidden;}
+    header {position:fixed; top:0; left:0; width:100%; background:#1e293b; padding:15px 40px; display:flex; justify-content:space-between; align-items:center; z-index:1000;}
+    header h1 {font-size:22px; color:#38bdf8;}
+    nav a {color:white; margin:0 15px; text-decoration:none; font-size:16px; transition:0.3s;}
+    nav a:hover {color:#38bdf8;}
+
+    section {min-height:100vh; padding:100px 60px; position:relative; z-index:1;}
+    .home {display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;}
+    .home h2 {font-size:40px; color:#38bdf8;}
+    .home p {font-size:20px; margin-top:10px; color:#cbd5e1;}
+    .resume-btn {margin-top:20px; display:inline-block; padding:12px 20px; background:#38bdf8; color:#0f172a; font-weight:bold; border-radius:8px; text-decoration:none; transition:0.3s;}
+    .resume-btn:hover {background:#0ea5e9;}
+
+    .about, .skills, .experience, .education, .contact {max-width:1000px; margin:auto;}
+    h2.section-title {font-size:28px; margin-bottom:20px; border-bottom:2px solid #38bdf8; display:inline-block;}
+
+    .skills-list, .edu-list, .exp-list {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
+    .card {background:#1e293b; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.4); transition:0.3s;}
+    .card:hover {transform:translateY(-5px);}
+
+    .contact form {display:flex; flex-direction:column; gap:15px;}
+    .contact input, .contact textarea {padding:12px; border:none; border-radius:8px;}
+    .contact button {background:#38bdf8; color:#0f172a; border:none; padding:12px; border-radius:8px; cursor:pointer; font-weight:bold;}
+    .contact button:hover {background:#0ea5e9;}
+
+    .popup {position:fixed; top:20px; right:20px; background:#22c55e; color:white; padding:15px 20px; border-radius:8px; display:none; z-index:2000; box-shadow:0 4px 8px rgba(0,0,0,0.3);}
+
+    footer {text-align:center; padding:20px; background:#1e293b;}
+
+    #particles-js {position:fixed; top:0; left:0; width:100%; height:100%; z-index:0; background:#0f172a;}
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <h1>Saurav C</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <h2>Hi, I'm Saurav 👋</h2>
+    <p>Embedded Software Engineer | Passionate about Aerospace & Innovation</p>
+    <!-- Replace FILE_ID with your Google Drive file ID -->
+    <a href="https://drive.google.com/file/d/1iJcUzJ7_2Kb63iminWOnqvW8H_dUEZ8X/view?usp=sharing" 
+   class="resume-btn" target="_blank">
+   <i class="fa-solid fa-download"></i> View Resume
+</a>
+
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>Embedded Software Engineer with a strong background in designing and implementing embedded solutions. Skilled in C, C++, and Embedded C, with experience in ARM microcontrollers, Linux kernel, and hardware interfaces. Passionate about engineering, continuous learning, and contributing to organizational growth.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-list">
+      <div class="card">Programming: C, C++, Embedded C</div>
+      <div class="card">Embedded Systems: ARM7TDMI-S (LPC2129)</div>
+      <div class="card">Hardware: GPIO, UART, SPI, I2C, CAN, ADC</div>
+      <div class="card">OS: Linux Kernel</div>
+      <div class="card">Tools: Keil, Proteus, Vector Cast</div>
+      <div class="card">Soft Skills: Leadership, Teamwork, Problem Solving</div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <h2 class="section-title">Experience & Projects</h2>
+    <div class="exp-list">
+      <div class="card">
+        <h3>Embedded Engineer - Honeywell Aerospace</h3>
+        <p><strong>Project:</strong> Thunderbolt Platform (Feb 2025 – Present)</p>
+        <p>Worked on enhancing the Anthem integrated flight deck, delivering an always-on, cloud-connected cockpit experience. Contributed to improving flight efficiency, safety, and comfort by building a robust embedded software foundation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="education">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-list">
+      <div class="card">B.E. in Electronics & Communication – SNS College of Technology (2019–2023) | GPA: 8.21</div>
+      <div class="card">Higher Secondary (Biology Science) – 82%</div>
+      <div class="card">High School – 89%</div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p><i class="fa-solid fa-envelope"></i> souravsourav0077@gmail.com</p>
+    <p><i class="fa-brands fa-linkedin"></i> <a href="http://surl.li/shjwyw" target="_blank" style="color:#38bdf8;">LinkedIn</a></p>
+    <p><i class="fa-solid fa-phone"></i> +91 6282831402</p>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Saurav C | Portfolio</p>
+  </footer>
+
+  <!-- Popup Notification -->
+  <div id="popup" class="popup">Your mail has been sent ✅</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Particles.js config
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 100, density: { enable: true, value_area: 800 } },
+        color: { value: "#38bdf8" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#38bdf8", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: { repulse: { distance: 100 }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    });
+
+    // Popup on form submit
+    const form = document.getElementById('contactForm');
+    const popup = document.getElementById('popup');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      popup.style.display = 'block';
+      setTimeout(() => { popup.style.display = 'none'; }, 3000);
+      form.reset();
+    });
+  </script>
+</body>
+</html>
